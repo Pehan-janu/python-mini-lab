@@ -32,7 +32,7 @@ while True:
         print(f"Congratulations {name}, you got it!")
         break
     elif user_guess > random_number:
-        print("You were above the number!")
+        print("You were above the number")
     else:
         print("You were below the number!")
 

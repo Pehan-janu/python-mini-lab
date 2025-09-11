@@ -140,4 +140,4 @@ elif percentage >= 50:
 else:
     print("📚 Keep studying! Computer hardware is fascinating once you dive deeper!")
 
-print("\nThanks for playing! 🎯")
+print("\nThanks for playing! ")
