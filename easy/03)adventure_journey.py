@@ -1,40 +1,42 @@
+# File name suggestion: adventure_journey.py
+
 name = input("Type your name: ")
-print("Welcome", name, "to this adventure!")
+print(f"Welcome, {name}, to this thrilling adventure!")
 
 answer = input(
-    "You are on a dirt road, it has come to an end and you can go left or right. Which way would you like to go? ").lower()
+    "You are on a dirt road. It comes to an end and you can go left or right. Which way do you choose? ").lower()
 
 if answer == "left":
     answer = input(
-        "You come to a river, you can walk around it or swim accross? Type walk to walk around and swim to swim accross: ")
+        "You arrive at a river. Do you want to walk around it or swim across? (walk/swim): ").lower()
 
     if answer == "swim":
-        print("You swam acrross and were eaten by an alligator.")
+        print("You bravely swam across, but an alligator was waiting... You lose!")
     elif answer == "walk":
-        print("You walked for many miles, ran out of water and you lost the game.")
+        print("You walked for miles and ran out of water. You lose!")
     else:
-        print('Not a valid option. You lose.')
+        print("Invalid choice. You lose.")
 
 elif answer == "right":
     answer = input(
-        "You come to a bridge, it looks wobbly, do you want to cross it or head back (cross/back)? ")
+        "You come across a wobbly bridge. Do you cross it or go back? (cross/back): ").lower()
 
     if answer == "back":
-        print("You go back and lose.")
+        print("You decided to go back. Sometimes caution is key, but you lose this time.")
     elif answer == "cross":
         answer = input(
-            "You cross the bridge and meet a stranger. Do you talk to them (yes/no)? ")
+            "You successfully cross the bridge and meet a stranger. Do you talk to them? (yes/no): ").lower()
 
         if answer == "yes":
-            print("You talk to the stanger and they give you gold. You WIN!")
+            print("The stranger shares a treasure map with you. You WIN!")
         elif answer == "no":
-            print("You ignore the stranger and they are offended and you lose.")
+            print("The stranger feels ignored and disappears. You lose.")
         else:
-            print('Not a valid option. You lose.')
+            print("Invalid choice. You lose.")
     else:
-        print('Not a valid option. You lose.')
+        print("Invalid choice. You lose.")
 
 else:
-    print('Not a valid option. You lose.')
+    print("Invalid choice. You lose.")
 
-print("Thank you for trying", name)
+print(f"Thanks for playing, {name}! Hope you enjoyed the adventure.")
